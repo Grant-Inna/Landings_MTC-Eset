@@ -1,0 +1,67 @@
+doctype
+html
+    head
+        include head
+    body
+        #container
+            .header__container
+                .header__general
+                    .header__logo
+                    .header__caption расширенная версия антивируса
+                    a( href="http://esetnod32.ru" ).header__cross
+                .header__info
+                    .header__firstLine
+                        .header__stripe
+                        .header__text Больше безопасности
+                    .header__other для вашего&nbsp;
+                        strong смартфона&nbsp;
+                        | с расширенной версией&nbsp;
+                        strong антивируса
+            .topInfo__container
+                .topInfo__block
+                    .topInfo__icon.topIcon-1
+                    .topInfo__title Антивор
+                    .topInfo__text Найти пропавший телефон стало легче!
+                .topInfo__block
+                    .topInfo__icon.topIcon-2
+                    .topInfo__title Антифишинг
+                    .topInfo__text Защита от посещения мошеннических сайтов
+                .topInfo__block
+                    .topInfo__icon.topIcon-3
+                    .topInfo__title Антиспам
+                    .topInfo__text Рекламные SMS и звонки уже в прошлом
+                .topInfo__block
+                    .topInfo__icon.topIcon-4
+                    .topInfo__title Платежи&nbsp;
+                        br
+                        | онлайн
+                    .topInfo__text Защита онлайн платежей на всех устройствах
+            .bottomInfo__container
+                .bottomInfo__inner
+                    .bottomInfo__icon
+                    .bottomInfo__title Приложение
+                        br
+                        | доступно для&nbsp;
+                        br
+                        strong Android&nbsp;
+                        | устройств
+                    .bottomInfo__text Требуется установка приложения
+            .movingInfo__container
+                .movingInfo__inner
+                    .movingInfo__title
+                        strong Подключите&nbsp;
+                        br
+                        span дополнительную
+                        br
+                        | защиту
+                    .movingInfo__icon
+                    .movingInfo__button( onclick="document.getElementById('subscr-form').submit();return false;" )
+                        span Подключить
+                    .movingInfo__price Бесплатно 1 день, далее 2 р/день
+            //.empty-block
+            footer.footer#footer
+                .hide__content
+                        <!--END HEADER-->
+                    include footer
+                        <!--START FOOTER-->
+                p.footer__text-block#trig-footer( style="display: flex; align-items: flex-end;" )
