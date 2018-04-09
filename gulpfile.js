@@ -31,6 +31,7 @@ gulp.task('CSS', function() {
         .pipe(less())
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(gulp.dest( 'dist/styles/' ))
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest( 'dist/styles/' ))
