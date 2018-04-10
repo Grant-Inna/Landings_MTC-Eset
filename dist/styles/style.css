@@ -185,7 +185,7 @@ img {
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -553,6 +553,7 @@ a {
           transform: scaleY(0.9) scaleX(0.9);
   text-align: center;
   color: #5a797b;
+  font-weight: 300;
 }
 
 .secondLogo__container {
