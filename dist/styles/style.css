@@ -548,6 +548,9 @@ a {
 .movingInfo__price {
   width: 100%;
   font-size: 20px;
+  -webkit-transform: scaleY(0.9) scaleX(0.9);
+      -ms-transform: scaleY(0.9) scaleX(0.9);
+          transform: scaleY(0.9) scaleX(0.9);
   text-align: center;
   color: #5a797b;
 }
