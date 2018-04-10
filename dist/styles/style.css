@@ -212,7 +212,7 @@ a {
   height: auto;
   min-height: 320px;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
 }
 
 .header__container {
@@ -525,27 +525,59 @@ a {
   background: linear-gradient(0deg, #539a15 0%, #a6db33 100%);
   -webkit-box-shadow: 13px 23px 81px 0 rgba(133, 193, 39, 0.3);
           box-shadow: 13px 23px 81px 0 rgba(133, 193, 39, 0.3);
-  margin: .5rem auto;
+  margin: .2rem auto;
   padding: 1rem;
 }
 
-.movingInfo__button span {
+.movingInfo__button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .movingInfo__price {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 20px;
   text-align: center;
   color: #5a797b;
+}
+
+.secondLogo__container {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 5rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.secondLogo__image {
+  height: 80%;
+  width: 45%;
+  background: url('../images/logo-2.png') left center no-repeat;
+  background-size: contain;
 }
 
 .footer {
   padding: 1rem;
   color: #4d6668;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
 }
 
@@ -566,6 +598,18 @@ a {
 
   .header__other strong {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 730px) and (orientation: landscape) {
+  #container {
+    margin-bottom: 280px;
+  }
+}
+
+@media screen and (min-width: 730px) and (orientation: portrait) {
+  #container {
+    margin-bottom: 330px;
   }
 }
 
@@ -592,5 +636,17 @@ a {
 @media screen and (max-width: 560px) {
   html {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 359px) and (orientation: portrait) {
+  #container {
+    margin-bottom: 330px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .movingInfo__button {
+    margin: 0 auto 0.5rem;
   }
 }

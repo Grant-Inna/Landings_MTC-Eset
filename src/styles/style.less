@@ -43,7 +43,11 @@ a {
   height: auto;
   min-height: 320px;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
+
+  .to-o( @xxs, @p, { margin-bottom: 330px; });
+  .from-o( @md, @l, { margin-bottom: 280px; });
+  .from-o( @md, @p, { margin-bottom: 330px; });
 }
 
 
@@ -290,6 +294,10 @@ a {
   background: url('../images/05.png') right no-repeat;
   background-size: contain;
 }
+
+@font-size-text: 2rem;
+@font-size-text-from-md: 1.67rem;
+
 .movingInfo__button {
   .flex-center;
   cursor: pointer;
@@ -297,26 +305,46 @@ a {
   border-radius: 25px;
   background: @back-gradient;
   box-shadow: 13px 23px 81px 0 rgba(133, 193, 39, 0.3);
-  margin: .5rem auto;
+  margin: .2rem auto;
   padding: 1rem;
-  span {
+  .landscape( margin, 0 auto .5rem );
+  div {
+    .flex-center;
     color: white;
-    font-weight: 600;
-    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
   }
 }
 .movingInfo__price {
   .full-width;
-  font-size: 1.4rem;
+  font-size: 20px;
   text-align: center;
   color: rgb(90, 121, 123);
+
+}
+
+.secondLogo__container {
+  .full-width;
+  .flex;
+  .items-center;
+  .justify-start;
+  height: 5rem;
+  padding: 1rem 1rem 0 1rem;
+
+}
+.secondLogo__image {
+  height: 80%;
+  width: 45%;
+  background: url('../images/logo-2.png') left center no-repeat;
+  background-size: contain;
 }
 
 
 .footer {
   padding: 1rem;
   color: rgb(77, 102, 104);
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
 }
 
