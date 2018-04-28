@@ -29,7 +29,6 @@ body {
   overflow-x: hidden;
 }
 a {
-  text-decoration: none;
   color: #4e779e;
 }
 
@@ -43,10 +42,10 @@ a {
   height: auto;
   min-height: 320px;
   margin: 0 auto;
-  margin-bottom: 180px;
+  margin-bottom: 210px;
 
   .to-o( @xxs, @p, { margin-bottom: 330px; });
-  .from-o( @md, @l, { margin-bottom: 280px; });
+  .from-o( 500px, @l, { margin-bottom: 300px; });
   .from-o( @md, @p, { margin-bottom: 330px; });
 }
 
@@ -272,7 +271,7 @@ a {
   .flex-wrap;
   .justify-between;
   .items-center;
-  max-width: 400px;
+  max-width: 415px;
   margin: 0 auto;
   padding: .5rem 1rem .4rem;
 }
@@ -324,6 +323,12 @@ a {
   color: rgb(90, 121, 123);
   font-weight: 300;
 
+}
+
+.movingInfo__info {
+  width: 100%;
+  text-align: center;
+  font-size: .9rem;
 }
 
 .secondLogo__container {
